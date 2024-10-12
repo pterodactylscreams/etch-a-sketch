@@ -7,8 +7,8 @@ button.addEventListener("click", function () {
     }
 
     const containerDiv = document.getElementById("containerDiv")
-    containerDiv.style.backgroundColor="#dcdbf4"
     containerDiv.innerHTML = ""
+    containerDiv.style.backgroundColor="#dcdbf4"
 
     let height = containerDiv.getBoundingClientRect().height;
     let width = containerDiv.getBoundingClientRect().width;
@@ -24,7 +24,7 @@ button.addEventListener("click", function () {
         containerDiv.appendChild(square)
 
         square.addEventListener("mouseover", function(){
-            square.style.backgroundColor="#45327a1e"
+            square.style.backgroundColor="#45327a75"
         })
     }
 })
