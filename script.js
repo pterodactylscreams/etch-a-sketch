@@ -1,13 +1,17 @@
+let num=10
 const containerDiv=document.getElementById("containerDiv")
+containerDiv.innerHTML=""
 
-for (let i=0; i<16; i++){
-    const squareDiv=document.createElement("div")
-    containerDiv.appendChild(squareDiv)
-    squareDiv.classList.add("squareDiv")
-    // squareDiv.textContent=" h"
-}
+let height = containerDiv.getBoundingClientRect().height;
+let width = containerDiv.getBoundingClientRect().width;
 
-for (let i=0; i<16; i++){
-    const inSquare=document.createElement("div")
-    squareDiv.appendChild(inSquare)
+
+for (let i=0; i<num*num; i++){
+    const square=document.createElement("div")
+    square.classList.add("square")
+
+    square.style.width=`${width/num}px`
+    square.style.height=`${height/num}px`
+
+    containerDiv.appendChild(square)
 }

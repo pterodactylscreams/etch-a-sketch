@@ -1,8 +1,15 @@
-.squareDiv {
-    border:  0.6px solid black;
-    padding: 1.2em;
+#containerDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width:30em;
+    height:30em;
+    margin: auto; 
+    background-color: #dcdbf4
+    /* centers element */
 }
 
-/* .containerDiv {
-    display: flex;
-} */
+.square {
+    flex: auto;
+    border:  0.02px solid #ae9edbc5;
+    box-sizing: border-box;
+}
