@@ -1,6 +1,7 @@
 #home {
     display: flex;
-
+    flex-direction: column-reverse;
+    gap: 40px;
 }
 
 #containerDiv {
@@ -14,11 +15,18 @@
 }
 
 #gridButton {
-    
+    width: 10em;
+    height: 2.3em;
+    margin: auto;
+    background-color: #dcdbf4;
+    border-radius: 0.6em;
+    border: 1px #45327ac5;
+    color: #45327ac5;
+    font-size: 20px;
 }
 
 .square {
     flex: auto;
-    border:  0.02px solid #ae9edbc5;
+    border:  0.02px solid #45327a75;
     box-sizing: border-box;
 }
