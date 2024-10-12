@@ -10,7 +10,6 @@
     width:30em;
     height:30em;
     margin: auto; 
-    background-color: #dcdbf4
     /* centers element */
 }
 
@@ -25,8 +24,19 @@
     font-size: 20px;
 }
 
+#gridButton:hover{
+    background-color: #45327ac5;
+    color: #dcdbf4;
+    cursor:pointer;
+
+}
+
 .square {
     flex: auto;
-    border:  0.02px solid #45327a75;
+    border:  0.2px solid #45327a75;
     box-sizing: border-box;
+}
+
+.square:hover{
+    background-color: #45327a1e;
 }
